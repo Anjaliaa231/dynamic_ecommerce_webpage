@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wraper">
+            <div class="product-box">
+                <div class="all-images">
+                <div class="small-images">
+                    <img src="flower.png" onclick ="clickimg(this)">
+                    <img src="flower2.png" onclick ="clickimg(this)">
+                    <img src="flower3.png" onclick ="clickimg(this)">
+                    <img src="flower4.png" onclick ="clickimg(this)">
+                </div>
+                <div class="main-image">
+                    <img src="flower3.png" id="imagebox">
+                </div>
+            </div>
+                </div>
+            <div class="text">
+                <div class="content">
+                    <p class="brand">Brand : Apple</p>
+                    <h2>apple iphone (white,64gb)</h2>
+                    <div class="review">
+                        <span>(4.6)</span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="price-box">
+                        <p class="price">&#8377;77,900</p>
+                        <strike>&#8377;89,900</strike>
+                    </div>
+                    <p>size :<select name="size">
+                        <option value="select colour">select colour</option>
+                        <option value="black">black</option>
+                        <option value="blue">blue</option>
+                        <option value="green">green</option>
+                        <option value="purple">purple</option>
+
+                    </select></p>
+                    <p>quantity <input type="text" value="1"></p>
+                    <button>
+
+                        <span class="fa fa-shopping-cart"></span>
+                        add to cart
+                    </button>
+                    <button class="buy">
+                        <span class="fa fa-shopping-cart"></span>
+                        buy now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <script>
+       function clickimg(smallimg){
+           var fullimg=document.getElementById("imagebox");
+           fullimg.src=smallimg.src
+
+       }
+   </script> 
+</body>
+</html>
